@@ -1,0 +1,25 @@
+{% load staticfiles %}
+<html>
+<head>
+    <title>Coding Arena</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/website.css' %}">
+      </head>
+<body>
+
+<div>
+    <h4 align="center">Coding Arena</h4>
+</div>  
+
+<div>
+	 {% block content %}
+
+     {% endblock %}
+</div>
+</body>
+
+</html>
+
+

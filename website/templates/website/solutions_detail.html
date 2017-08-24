@@ -1,0 +1,25 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+<ul>
+	 <li><a href="#">Home</a></li>
+     <li><a href="{% url 'solutions_page' %}">Solutions</a></li>
+     <li><a href="{% url 'tutorials_page' %}">Tutorials</a></li>
+     <li><a href="{% url 'about_page' %}">About</a></li> 
+</ul>
+
+    <div class="post">
+        
+        {% if solution.published_date %}
+            <div class="date">
+                {{ solution.published_date }}
+            </div>
+        {% endif %}
+        
+        <h1>{{ solution.title }}</h1>
+        <p>{{ solution.text|linebreaksbr }}</p>
+
+    </div>
+
+ 
+ {% endblock content %}

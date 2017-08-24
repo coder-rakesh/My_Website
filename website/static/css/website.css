@@ -1,0 +1,26 @@
+ul{ 
+    display:inline-table;
+    list-style:none;
+    font-size: 20px;
+    padding: 0px;
+    margin-left: 120px;
+    margin-top: 40px;
+  }
+
+ul li{
+     float: left;
+     width: 300px;
+     list-style: none;
+     font-size: 35px;
+     height: 100px;
+  }
+
+h4{
+	 font-size: 70px;
+	 background:yellow;
+}
+
+p{
+   margin-left: 120px;
+   margin-right: 120px; 	 
+}

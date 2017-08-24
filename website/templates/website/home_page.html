@@ -1,21 +1,17 @@
+{% extends 'website/base.html' %}
 
-<!DOCTYPE HTML>
-<html>
-<head>
-    <title>Coding Arena</title>
-<link href="css/style.css" type="text/css" rel="stylesheet">
-<link href="sx.jpg" type="image" rel="alternate"> 
-      </head>
-<body>
-<div>
-    <h1 align="center">Welcome to Coding Arena</h1>
-</div>  
-   <div style="font-size:30px;">
+{% block content %}
+<ul>
+	 <li><a href="#">Home</a></li>
+     <li><a href="{% url 'solutions_page' %}">Solutions</a></li>
+     <li><a href="{% url 'tutorials_page' %}">Tutorials</a></li>
+     <li><a href="{% url 'about_page' %}">About</a></li> 
+</ul>
+
+      <div style="font-size:30px;">
           
-           <p>Here you will find solutions of many problems on spoj. If you want solution of some problem which is not listed in blog or have doubt regarding any spoj problem (which i have solved) or any programming concept (data structure) you can mail me @ raj.nishant360@gmail.com
-           And my humble request to you all that don't copy the code only try to understand the logic and algorithm behind the code. I have started this because if you tried as hard as you can and still can't find any solution to the problem then you can refer to this.</p>
-    </div>
+             <p>Here you will find solutions of many problems on spoj And tutorials for some important topics.
+             And my request to you all that don't copy the code only try to understand the logic and algorithm behind the code. I have started this because if you tried as hard as you can and still can't find any solution to the problem then you can refer to this And by Tutorilals you will good understanding of algorithm in less time.</p>
+      </div>
    
-     </body>
-
-  </html>
+ {% endblock content %}

@@ -1,0 +1,26 @@
+{% extends 'website/base.html' %}
+
+{% block content %}
+<ul>
+	 <li><a href="{% url 'home_page' %}">Home</a></li>
+     <li><a href="{% url 'solutions_page' %}">Solutions</a></li>
+     <li><a href="{% url 'tutorials_page' %}">Tutorials</a></li>
+     <li><a href="{% url 'about_page' %}">About</a></li> 
+</ul>
+ 
+ {% for post in solutions %}
+           <div class="post">
+                <div class="date">
+           
+                  {{ post.published_date }}
+                </div>
+
+                <h1><a href="{% url 'solutions_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+       
+                <p>{{ post.text|truncatewords:10 }}</p>
+       
+         </div>
+
+    {% endfor %}
+     
+{% endblock content %}
