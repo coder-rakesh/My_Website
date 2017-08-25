@@ -1,19 +1,15 @@
 {% extends 'website/base.html' %}
 
 {% block content %}
-<ul>
-	 <li><a href="#">Home</a></li>
-     <li><a href="{% url 'solutions_page' %}">Solutions</a></li>
-     <li><a href="{% url 'tutorials_page' %}">Tutorials</a></li>
-     <li><a href="{% url 'about_page' %}">About</a></li> 
-</ul>
- 
+
  <div class="post">
         
         {% if tutorial.published_date %}
         
             <div class="date">
+                
                 {{ tutorial.published_date }}
+
             </div>
         
         {% endif %}
