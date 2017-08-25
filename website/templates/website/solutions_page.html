@@ -9,7 +9,7 @@
                   {{ post.published_date }}
                 </div>
 
-                <h1><a href="{% url 'solutions_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                <h1><a href="{% url 'solution_detail' pk=post.pk %}">{{ post.title }}</a></h1>
        
                 <p>{{ post.text|truncatewords:10 }}</p>
        
