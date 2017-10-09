@@ -4,13 +4,14 @@
 
  {% for post in tutorials %}
  
-       <div class="post">
+       <div class="post" style="background-color: white; width: 700px; align-content: center; margin-left: 300px;" ; >
+
           
-            <div class="date">
+            <div class="date" align="center">
                 {{ post.published_date }}
           </div>
             
-             <h1><a href="{% url 'tutorial_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+             <h1 align="center"; style="font-size:23px; " ;><a href="{% url 'tutorial_detail' pk=post.pk %}">{{ post.title }}</a></h1>
              <p>{{ post.text|truncatewords:10 }}</p>
     
        </div>

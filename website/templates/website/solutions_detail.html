@@ -2,18 +2,25 @@
 
 {% block content %}
 
-    <div class="post">
-        
+    <div class="post" style="background-color: white; width: 700px; align-content: center; margin-left: 300px"; >
+       
+       <div style=" border-style: solid;border-width: 5px; border-color: #0DBAFF; "> 
+      
         {% if solution.published_date %}
         
-            <div class="date">
+            <div align="center">
                 {{ solution.published_date }}
             </div>
         {% endif %}
         
-        <h1>{{ solution.title }}</h1>
-        <p>{{ solution.text|linebreaksbr }}</p>
-
+        <h1 align="center">{{ solution.title }}</h1>
+         <h2 style="margin-left: 50px">Hint:</h2>
+        <p style="font-size: 18px">{{solution.Hint}} </p>
+ 
+         <h3 style="margin-left: 50px">Solution in C++:</h3> 
+        <p style="font-size: 16px">{{ solution.text|linebreaksbr }}</p>
+      
+     </div>
     </div>
 
  

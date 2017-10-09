@@ -3,13 +3,13 @@ ul{
     list-style:none;
     font-size: 20px;
     padding: 0px;
-    margin-left: 120px;
+    margin-left: 150px;
     margin-top: 40px;
   }
 
 ul li{
      float: left;
-     width: 300px;
+     width: 200px;
      list-style: none;
      font-size: 35px;
      height: 100px;
@@ -24,3 +24,11 @@ p{
    margin-right: 120px; 	 
 }
 
+.bg{
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+     height: 100% ;
+    background-size: cover;
+}

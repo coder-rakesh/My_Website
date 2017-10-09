@@ -1,31 +1,39 @@
 {% load staticfiles %}
+
 <html>
 <head>
     <title>Coding Arena </title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-        <link rel="stylesheet" href="{% static 'css/website.css' %}">
+        <link rel="stylesheet" href="{% static 'css/website.css' %}"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
       
-    </head>
-<body>
+ </head>
 
-<div style="background-color: pink">
+
+<body >
+ 
+ <body id="bg" style="background-image: url('{% static "img/wood.png" %}')";>
+ <div >
+
     <h4 align="center">Coding Arena</h4>
-    <ul>
-	 <li><a href="{% url 'home' %}">Home</a></li>
-     <li><a href="{% url 'solutions' %}">Solutions</a></li>
-     <li><a href="{% url 'tutorials' %}">Tutorials</a></li>
-     <li><a href="{% url 'about' %}">About</a></li> 
-</ul>
+ 
+     <ul>
+    	 <li><a href="{% url 'home' %}">Home</a></li>
+         <li><a href="{% url 'solutions' %}">Solutions</a></li>
+         <li><a href="{% url 'tutorials' %}">Tutorials</a></li>
+         <li><a href="{% url 'about' %}">About</a></li> 
+     </ul>
 
 </div>  
 
 <div>
-	 {% block content %}
+	  {% block content %}
 
-     {% endblock %}
+      {% endblock %}
 </div>
+
 </body>
 
 </html>
